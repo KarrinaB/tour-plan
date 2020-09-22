@@ -53,6 +53,32 @@
       height: 1px
       background-color: $text-color
       cursor: pointer
+  .stars 
+    flex-basis: auto
+  .hotel
+    padding: 0
+    &-wrapper
+      display: flex
+      justify-content: space-between
+    &-name
+      flex-basis: 100%
+      margin-top: 20px
+      margin-bottom: 3px
+      font-size: 24px
+    &-info
+      display: flex
+      justify-content: space-between
+      &__text
+        width: 100%
+      &__ratting
+        display: none
+    &-offer
+      order: -1
+      margin-left: 0
+    &-about
+      font-style: 12px
+      line-height: 15px
+  
 @media (max-width: 576px)
   .container
     max-width: 90%    
