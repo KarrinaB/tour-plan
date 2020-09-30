@@ -522,6 +522,15 @@ template {
   background-color: #F5FAFE;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .hotel-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -597,6 +606,22 @@ template {
   font-size: 12px;
 }
 
+.hotel-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -630,7 +655,19 @@ template {
   border-radius: 8px;
 }
 
-.swiper-container:after {
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 728px;
+  height: 450px;
+  padding: 0;
+}
+
+.swiper-slide:after {
   content: '';
   position: absolute;
   height: 100%;
@@ -642,18 +679,6 @@ template {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   z-index: 100;
-}
-
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 728px;
-  height: 450px;
-  padding: 0;
 }
 
 .slider {
@@ -686,6 +711,130 @@ template {
   background-image: url(../img/arrow-before.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.booking {
+  border-radius: 8px;
+  max-width: 350px;
+  min-height: 210px;
+  padding: 29px;
+  background-color: #0A223D;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Nunito';
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 120px;
+  margin-bottom: 9px;
+}
+
+.booking__start {
+  font-size: 10px;
+}
+
+.booking__pricetag {
+  font-size: 24px;
+  margin-top: 3px;
+  font-weight: 800;
+}
+
+.booking__per-room {
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.booking__icon {
+  height: 14px;
+  width: 14px;
+}
+
+.booking__description {
+  font-size: 12px;
+}
+
+.booking__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.booking__room {
+  margin-top: 3px;
+}
+
+.booking__icon {
+  margin-right: 9px;
+}
+
+.booking__button {
+  height: 45px;
+  max-width: 295px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.map {
+  height: 215px;
+  width: 347px;
+  border-radius: 10px;
+}
+
+.call-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.call-center__text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.call-center__number {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.call-center__icon {
+  height: 14px;
+  width: 14px;
 }
 
 @media (max-width: 1200px) {
