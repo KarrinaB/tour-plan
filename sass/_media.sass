@@ -5,7 +5,7 @@
     max-width: 600px
   
 @media (max-width: 992px)
-  .container 
+  .container, .newsletter-wrapper
     max-width: 760px
   .navbar
     &-wrapper
@@ -36,15 +36,16 @@
       margin-bottom: 30px
     &-space
       flex-direction: row
-      justify-content: space-around
+      justify-content: space-between
   .swiper
     &-slide
       &__img
         max-width: 100%
         object-fit: cover
   
+  
 @media (max-width: 768px)
-  .container
+  .container, .newsletter-wrapper
     max-width: 700px
     width: 90%
   .user 
@@ -74,7 +75,6 @@
   .stars 
     flex-basis: auto
   .hotel
-    padding: 0
     &-wrapper
       display: flex
       justify-content: space-between
@@ -104,6 +104,13 @@
     margin-right: 16px
     &__price
       margin-right: auto
+  .newsletter
+    &-wrapper
+      flex-wrap: wrap
+      margin: auto
+      
+      
+
   
 @media (max-width: 576px)
   .container
@@ -125,6 +132,20 @@
   .swiper
     &-container
       height: 280px
+  .newsletter
+    padding: 76px 0 83px 0
+    &-title
+      font-size: 20px
+      margin-bottom: 37px
+      &__text
+        font-size: 30px
+    &-search
+      width: 280px
+
+    
+      
+
+
     
   
 @media (max-width: 480px) and (min-width: 320px)  

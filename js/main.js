@@ -5,7 +5,7 @@ var mySwiper = new Swiper('.swiper-container', {
   // Navigation arrows
   navigation: {
     nextEl: '.slider-button--next',
-    prevEl: '.sloder-button--prev',
+    prevEl: '.slider-button--prev',
   },
   keyboard: {
     enabled: true,
