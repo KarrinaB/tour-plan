@@ -1,0 +1,97 @@
+.reviews
+  padding-top: 40px
+  padding-bottom: 70px 
+  &__title
+    font-family: 'Mulish'
+    font-style: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 70px
+  &-slider
+    height: 100%
+    &__item
+      background-color: #fff
+      position: relative
+      border-radius: 8px
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 45px auto 0
+      padding: 0 62px 30px
+      max-width: 730px
+      
+      &:before
+        position: absolute
+        content: ''
+        background-image: url(../img/quot.svg)
+        background-repeat: no-repeat
+        width: 70px
+        height: 47px
+        left: 62px
+        top: 13px
+      &:after
+        position: absolute
+        content: ''
+        background-image: url(../img/quot-right.svg)
+        background-repeat: no-repeat
+        width: 70px
+        height: 47px
+        right: 62px
+        top: 118px
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      z-index: 99
+      cursor: pointer
+      background-position: center
+      border: none
+      background-color: transparent
+      &--prev
+        background-image: url(../img/vector-prev.svg)
+        left: 0
+      &--next
+        background-image: url(../img/vector-next.svg)
+        right: 0
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 25px
+      margin-top: -45px
+    &__avatar
+      margin-bottom: 9px
+      height: 90px
+      width: 90px
+      border-radius: 50%
+      object-fit: cover
+    
+    &__username
+      font-style: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+      margin-top: 0
+    &__date
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      margin-bottom: 9px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      padding: 0 32px
+  &-stars
+    display: flex
+    align-items: center
+    
+    
