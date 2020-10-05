@@ -1,10 +1,10 @@
 .hotel
   padding: 23px 0 70px 0
   background-color: $secondary
-  
   &-grid
     display: flex
     justify-content: space-between
+    
   &-info
     display: flex
     justify-content: space-between
@@ -52,12 +52,21 @@
     display: flex
     flex-direction: column 
     justify-content: space-between
+    margin-left: 28px
+    width: 350px
+    height: 450px
+    
+    
   &-map
-    height: 215px
+    height: 213px
     width: 347px
-  &-slider
+    margin-bottom: 0
+    
+  &__slider
     max-width: 728px
     height: 450px
+    
+  &-slider
     &__item
       display: flex
       width: 728px
@@ -101,11 +110,12 @@
         background-image: url(../img/arrow-before.svg)
         background-repeat: no-repeat
         background-position: center 
+
 .stars
   flex-basis: 100%
   &__img
     margin-right: 3px
-    
+
 .ratting
   &__text
     font-size: 8px
@@ -171,6 +181,7 @@
   border-radius: 10px
   overflow: hidden
   
+  
 .call-center
   display: flex
   justify-content: space-between
@@ -186,6 +197,7 @@
   &__icon
     height: 14px
     width: 14px
+
   
 
 
