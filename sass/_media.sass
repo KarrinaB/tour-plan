@@ -64,6 +64,10 @@
         width: 100%
         object-fit: cover
   .reviews
+    padding-bottom: 0
+    &__title
+      font-size: 30px
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
@@ -73,7 +77,7 @@
     &__card
       margin-bottom: 20px
   .card
-    width: 340px
+    width: 370px
     height: 250px
 @media (max-width: 768px)
   .container, .newsletter-wrapper
@@ -141,6 +145,7 @@
       flex-wrap: wrap
       margin: auto
   .reviews
+    padding-bottom: 0
     &__title
       font-size: 30px
     &-slider
@@ -201,9 +206,17 @@
     &-search
       width: 280px
   .reviews
+    padding-bottom: 0
+    &__title
+      font-size: 18px
+      margin-bottom: 42px
     &-slider
       height: 100%
       padding: 45px
+      &__item
+        padding: 0 0 20px 0
+  .activities
+    padding-top: 0
   .card
     width: 100%
 
