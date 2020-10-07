@@ -1329,22 +1329,9 @@ template {
   border: none;
   margin-bottom: 23px;
   height: 123px;
-  width: 100%;
   resize: none;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-}
-
-.footer__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer__button {
@@ -1368,6 +1355,19 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .footer-bottom {
@@ -1983,6 +1983,18 @@ template {
   .footer__icon-wrapper {
     margin-right: 7px;
     width: 30px;
+  }
+  .footer__form {
+    font-size: 12px;
+  }
+  .footer__block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .footer-bottom {
     margin-top: 30px;
