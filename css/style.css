@@ -1440,8 +1440,10 @@ template {
   position: fixed;
   top: 50%;
   left: 50%;
-  max-width: 487px;
+  width: 487px;
+  max-width: 94%;
   height: 487px;
+  max-height: 94%;
   padding: 33px 88px;
   background-color: #0A223D;
   color: #ffffff;
@@ -1974,6 +1976,9 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal {
+    padding: 20%;
+  }
   .modal__dialog {
     padding: 30px 58px 10px;
   }
@@ -2055,7 +2060,6 @@ template {
   }
   .modal__dialog {
     padding: 30px 38px 10px;
-    margin: auto;
     height: 430px;
   }
   .modal__input {
