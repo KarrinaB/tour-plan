@@ -23,8 +23,9 @@ img {
   border-radius: 4px;
   border: none;
   padding: 0 23px;
+  color: #333333;
   height: 50px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .message {
@@ -47,6 +48,13 @@ img {
   border: none;
   border-radius: 4px;
   background-color: #EC1F46;
+  cursor: pointer;
+}
+
+.invalid {
+  color: #EC1F46;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -936,14 +944,12 @@ template {
 .newsletter-search {
   position: relative;
   width: 350px;
-  height: 55px;
   overflow: hidden;
   border-radius: 4px;
   border: none;
 }
 
 .newsletter-search__input {
-  position: absolute;
   width: 100%;
   padding-left: 33px;
   padding-right: 75px;
@@ -955,8 +961,10 @@ template {
 .newsletter-search__button {
   position: absolute;
   width: 65px;
-  height: 55px;
+  height: 57px;
   right: 0;
+  top: 0;
+  bottom: 0;
   color: #ffffff;
   border: none;
   background-color: #EC1F46;
@@ -1343,11 +1351,16 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
 }
 
 .footer__message {
+  margin-top: 15px;
   margin-bottom: 23px;
   height: 123px;
   -ms-flex-preferred-size: 100%;
@@ -1442,8 +1455,6 @@ template {
   left: 50%;
   width: 487px;
   max-width: 94%;
-  height: 487px;
-  max-height: 94%;
   padding: 33px 88px;
   background-color: #0A223D;
   color: #ffffff;
@@ -1475,6 +1486,7 @@ template {
 }
 
 .modal__message {
+  margin-top: 15px;
   height: 123px;
   width: 100%;
 }
@@ -1681,6 +1693,10 @@ template {
     -ms-grid-row: 4;
     grid-row: 4;
     grid-column: span 5;
+  }
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer-bottom {
     display: -webkit-box;
@@ -1972,12 +1988,9 @@ template {
   .footer__message {
     width: 100%;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-  }
-  .modal {
-    padding: 20%;
   }
   .modal__dialog {
     padding: 30px 58px 10px;
@@ -2060,14 +2073,15 @@ template {
   }
   .modal__dialog {
     padding: 30px 38px 10px;
-    height: 430px;
   }
   .modal__input {
     width: 100%;
     height: 45px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
   .modal__message {
+    margin-top: 10px;
     height: 110px;
     width: 100%;
   }
