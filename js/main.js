@@ -73,5 +73,6 @@ function closeModal(event) {
     },
   });
 });
+AOS.init();
 });
 
