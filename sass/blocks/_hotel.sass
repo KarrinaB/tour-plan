@@ -10,8 +10,12 @@
     justify-content: space-between
     padding-bottom: 20px
     &__ratting
-      width: 65px
-      height: 45px
+      min-width: 65px
+      min-height: 45px
+      padding-top: 8px 
+      padding-left: 6px
+      padding-bottom: 6px
+      padding-right: 7px
       background-color: $primary
       border-radius: 4px
       color: $white
@@ -19,7 +23,9 @@
       justify-content: center
       align-items: center
       margin-top: 13px
+      margin-bottom: 10px
       flex-direction: column
+      flex-wrap: wrap
     &__text
       font-size: 8px
       line-height: 10px
@@ -55,8 +61,6 @@
     margin-left: 28px
     width: 350px
     height: 450px
-    
-    
   &-map
     height: 213px
     width: 347px
@@ -130,7 +134,6 @@
 .booking
   border-radius: 8px
   max-width: 350px
-  min-height: 210px
   padding: 29px
   background-color: $dark-color
   color: $white
@@ -143,7 +146,6 @@
   &__price
     display: flex
     flex-direction: column
-    margin-right: 120px
     margin-bottom: 9px
   &__start
     font-size: 10px
@@ -168,7 +170,7 @@
   &__icon
     margin-right: 9px
   &__button
-    height: 45px
+    padding: 13px 20px
     max-width: 295px
     font-size: 14px
     color: $white
@@ -181,8 +183,6 @@
   width: 100%
   border-radius: 10px
   overflow: hidden
-  
-  
 .call-center
   display: flex
   justify-content: space-between
