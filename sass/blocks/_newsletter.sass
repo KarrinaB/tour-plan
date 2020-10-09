@@ -4,9 +4,10 @@
   background-repeat: no-repeat
   background-position: center
   background-size: cover 
-  padding: 98px 0 89px 0
+  padding: 90px 0 80px 0
   display: flex
   justify-content: center
+    
   &::before
     content: ''
     position: absolute
@@ -23,6 +24,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    overflow: hidden
   &-title
     font-family: 'Mulish'
     font-size: 24px
@@ -56,6 +58,14 @@
       background-color: $primary
       font-size: 12px
       cursor: pointer
+      &:hover 
+        background: #F66C7B
+        color: #fff
+        background-image:-webkit-linear-gradient(top, #D25068, #F66C7B)
+        background-image:-moz-linear-gradient(top, #D25068, #F66C7B)
+        background-image:-ms-linear-gradient(top, #D25068, #F66C7B)
+        background-image:-o-linear-gradient(top, #D25068, #F66C7B)
+        background-image:linear-gradient(top, #D25068, #F66C7B)
 
       
 

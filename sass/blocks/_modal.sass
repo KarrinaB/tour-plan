@@ -9,10 +9,12 @@
     z-index: 100
     visibility: hidden
     opacity: 0
+    
     &--visible
       visibility: visible
       opacity: 1
       transition: opacity 0.2s
+      
   &__dialog
     position: fixed
     top: 50%
@@ -27,11 +29,13 @@
     transform: translate(-50%, -50%)
     visibility: hidden
     opacity: 0
-    
     &--visible
       visibility: visible
       opacity: 1
       transition: opacity 0.2s
+      overflow: auto
+      max-height: 100vh
+      
   &__close
     position: absolute
     right: 18px
